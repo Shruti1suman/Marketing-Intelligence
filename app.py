@@ -35,9 +35,16 @@ st.sidebar.header("Data Selection")
 view = st.sidebar.radio("Choose View", ["Marketing", "Business"])
 platform = st.sidebar.selectbox("Select Platform", list(marketing_data_raw.keys()))
 
+if business_data_raw is not None and not business_data_raw.empty:
+    min_date = business_data_raw["date"].min()
+    max_date = business_data_raw["date"].max()
+else:
+    import datetime
+    today = datetime.date.today()
+    min_date, max_date = today, today
 
-min_date = business_data_raw["date"].min()
-max_date = business_data_raw["date"].max()
+#min_date = business_data_raw["date"].min()
+#max_date = business_data_raw["date"].max()
 
 start_date = st.sidebar.date_input("Start Date", min_value=min_date, max_value=max_date, value=min_date)
 end_date = st.sidebar.date_input("End Date", min_value=min_date, max_value=max_date, value=max_date)
