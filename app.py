@@ -25,6 +25,12 @@ def load_data():
     if os.path.exists(business_path):
         business = pd.read_csv(business_path)
         business["date"] = pd.to_datetime(business["date"])
+        st.write("Loaded marketing data:", list(marketing_data.keys()))
+        if business is not None:
+            st.write(" Business data loaded, rows:", len(business))
+        else:
+            st.write(" Business.csv not found or empty")
+
 
     return marketing_data, business
 
