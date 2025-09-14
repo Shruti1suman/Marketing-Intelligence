@@ -16,17 +16,20 @@ This project helps track important metrics like revenue, profit, orders, and mar
   - no. of Orders  
   - no. of New Orders  
   - New Customers  
-- Interactive **date range filter** (Start Date & End Date).  
-- **Line charts** for revenue and order trends over time.  
+- Interactive **date range filter** (Start Date & End Date).
+- Profit vs COGS over time.
+- Orders vs New customers over time  
+- Line charts for revenue trends over time.  
 
 ### 🔹 Marketing Dashboard
 - Displays **key metrics**:
   - Total Spend  
   - Total Impressions  
   - Total Clicks  
-  - Total Conversions  
+  - Total Revenue
 - Interactive **date range filter** (Start Date & End Date).  
-- **Line charts** for spend and conversion trends over time.  
+- **Line charts** for spend and revenue trends over time.
+- Scattered Impression vs Clicks 
 - **Platform-level breakdown** (e.g., Facebook, Google, TikTok) to compare performance.  
 
 ### 🔹 Data Handling
